@@ -41,7 +41,7 @@ public class AsocArrayTest {
 		miTabla.put("telefono", "765123233");
 		miTabla.put("nombre", "mariana");
 		assertEquals(miTabla.size(), 4);
-		assertEquals(miTabla.get("nombre"), "luis");
+		assertEquals(miTabla.get("nombre"), "mariana");
 	}
 
 }
