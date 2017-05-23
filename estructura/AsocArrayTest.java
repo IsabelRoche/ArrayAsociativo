@@ -7,8 +7,9 @@ import org.junit.Test;
 public class AsocArrayTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void tamañoDeTablaVaciaEs0() {
+		AsocArray miTabla = new AsocArray();
+		assertEquals(miTabla.size(),1);
 	}
 
 }
