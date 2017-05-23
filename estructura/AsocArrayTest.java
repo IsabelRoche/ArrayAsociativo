@@ -11,5 +11,12 @@ public class AsocArrayTest {
 		AsocArray miTabla = new AsocArray();
 		assertEquals(miTabla.size(),0);
 	}
+	
+	@Test
+	public void tamañoDeTablaConUnPutEs1() {
+		AsocArray miTabla = new AsocArray();
+		miTabla.put("nombre", "luis");
+		assertEquals(miTabla.size(),0);
+	}
 
 }
