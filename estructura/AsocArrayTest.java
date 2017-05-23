@@ -96,4 +96,16 @@ public class AsocArrayTest {
 		
 		assertEquals(miTabla.containsKey("noexiste"),false);
 	}
+	
+	@Test
+	public void comprobamosQueSeBorraUnCampoCorrectamente(){
+		miTabla.put("nombre", "luis");
+		miTabla.put("apellido", "martin");
+		miTabla.put("dni", "12345678A");
+		miTabla.put("telefono", "765123233");
+		
+		assertEquals(miTabla.containsKey("nombre"), true);
+		assertEquals(miTabla.remove("noexiste"), true);
+		assertEquals(miTabla.containsKey("nombre"), false);
+	}
 }
