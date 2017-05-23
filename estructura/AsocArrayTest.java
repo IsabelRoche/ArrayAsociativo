@@ -52,6 +52,8 @@ public class AsocArrayTest {
 		miTabla.put("dni", "12345678A");
 		miTabla.put("telefono", "765123233");
 		
-		miTabla.get("dni");
+		miTabla.get("noexiste");
 	}
+	
+
 }
