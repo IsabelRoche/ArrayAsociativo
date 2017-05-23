@@ -86,4 +86,14 @@ public class AsocArrayTest {
 		
 		assertEquals(miTabla.containsKey("telefono"),true);
 	}
+	
+	@Test
+	public void comprobamosQueNoExisteUnaClaveQuePedimos(){
+		miTabla.put("nombre", "luis");
+		miTabla.put("apellido", "martin");
+		miTabla.put("dni", "12345678A");
+		miTabla.put("telefono", "765123233");
+		
+		assertEquals(miTabla.containsKey("telefono"),false);
+	}
 }
