@@ -25,6 +25,12 @@ public class AsocArrayTest {
 		assertEquals(miTabla.size(),1);
 	}
 	
-	
+	@Test
+	public void tamañoDeTablaCon3PutEs3(){
+		miTabla.put("nombre", "luis");
+		miTabla.put("apellido", "martin");
+		miTabla.put("dni", "12345678A");
+		assertEquals(miTabla.size(), 1);
+	}
 
 }
