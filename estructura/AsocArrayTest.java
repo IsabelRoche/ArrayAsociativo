@@ -65,4 +65,15 @@ public class AsocArrayTest {
 		String porDefecto = "defecto";
 		assertEquals(miTabla.getOrElse("apellido", porDefecto), "martin");
 	}
+	
+	@Test
+	public void pedimosClaveQueNoExisteAMetodoGetOrElse(){
+		miTabla.put("nombre", "luis");
+		miTabla.put("apellido", "martin");
+		miTabla.put("dni", "12345678A");
+		miTabla.put("telefono", "765123233");
+
+		String porDefecto = "defecto";
+		assertEquals(miTabla.getOrElse("apellido", porDefecto), porDefecto);
+	}
 }
