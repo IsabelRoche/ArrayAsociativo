@@ -76,4 +76,14 @@ public class AsocArrayTest {
 		String porDefecto = "defecto";
 		assertEquals(miTabla.getOrElse("noexiste", porDefecto), porDefecto);
 	}
+	
+	@Test
+	public void comprobamosQueExisteUnaClaveQuePedimos(){
+		miTabla.put("nombre", "luis");
+		miTabla.put("apellido", "martin");
+		miTabla.put("dni", "12345678A");
+		miTabla.put("telefono", "765123233");
+		
+		assertEquals(miTabla.containsKey("noexiste"),true);
+	}
 }
