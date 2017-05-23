@@ -105,7 +105,7 @@ public class AsocArrayTest {
 		miTabla.put("telefono", "765123233");
 		
 		assertEquals(miTabla.containsKey("nombre"), true);
-		assertEquals(miTabla.remove("noexiste"), true);
+		assertEquals(miTabla.remove("nombre"), true);
 		assertEquals(miTabla.containsKey("nombre"), false);
 	}
 }
