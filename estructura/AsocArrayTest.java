@@ -3,6 +3,7 @@ package estructura;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 
 public class AsocArrayTest {
@@ -43,5 +44,14 @@ public class AsocArrayTest {
 		assertEquals(miTabla.size(), 4);
 		assertEquals(miTabla.get("nombre"), "mariana");
 	}
-
+	
+	@Test (expected = UndefinedKeyException.class)
+	public void pedimosUnaClaveQueNoExisteDevuelveExcepcion() throws Exception {
+		miTabla.put("nombre", "luis");
+		miTabla.put("apellido", "martin");
+		miTabla.put("dni", "12345678A");
+		miTabla.put("telefono", "765123233");
+		
+		miTabla.get("dni");
+	}
 }
