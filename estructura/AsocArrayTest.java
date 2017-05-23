@@ -63,6 +63,6 @@ public class AsocArrayTest {
 		miTabla.put("telefono", "765123233");
 
 		String porDefecto = "defecto";
-		assertEquals(miTabla.getOrElse("noexiste", porDefecto), "martin");
+		assertEquals(miTabla.getOrElse("apellido", porDefecto), "martin");
 	}
 }
