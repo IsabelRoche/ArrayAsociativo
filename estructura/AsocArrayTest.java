@@ -32,5 +32,16 @@ public class AsocArrayTest {
 		miTabla.put("dni", "12345678A");
 		assertEquals(miTabla.size(), 3);
 	}
+	
+	@Test
+	public void cambiamosNombreConPut() throws UndefinedKeyException{
+		miTabla.put("nombre", "luis");
+		miTabla.put("apellido", "martin");
+		miTabla.put("dni", "12345678A");
+		miTabla.put("telefono", "765123233");
+		miTabla.put("nombre", "mariana");
+		assertEquals(miTabla.size(), 4);
+		assertEquals(miTabla.get("nombre"), "luis");
+	}
 
 }
